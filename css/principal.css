@@ -1,0 +1,310 @@
+.principal {
+margin-top:-2rem;
+
+
+}
+
+
+.principal__hoje {
+
+margin-bottom: 50px;
+
+
+
+}
+
+
+.principal__amanha {
+
+margin-bottom: 50px;
+
+}
+
+.principal__quarta-feira {
+	
+	margin-bottom: 80px;
+}
+
+
+.principal__titulo {
+
+margin-bottom:25px;
+color:var(--cor-principal);
+font-weight:700;
+font-size:1rem;
+
+}
+
+.principal__titulo:first-child{
+	margin-top:5vh;
+}
+
+
+
+
+
+/* Card completo */
+
+
+
+.principal__card {
+
+
+background-color:var(--cor-fundo-card);
+border-radius: 8px;
+padding:15px;
+margin-bottom:20px;
+}
+
+
+
+
+/* Primeira metade do card*/
+
+
+
+.principal__card-metade-um{
+
+display: grid;
+grid-template-columns:20% 20px auto 20%;
+grid-template-rows:repeat(2, 50%);
+grid-column-gap: 5px;
+
+
+
+}
+
+
+.principal__foto-perfil {
+
+min-width: 48px;
+max-width: 88px;
+width: 80%;
+border-radius: 100%;
+grid-area:1/1/3/2;
+}
+
+
+.principal__nome-paciente {
+color:var(--cor-principal);
+font-weight:700;
+font-size:0.88rem;
+letter-spacing: 0.3px;
+grid-area:1/2/2/4;
+align-self: end;
+
+}
+
+
+.principal__icone-tipo-consulta {
+
+min-width: 14px;
+max-width: 21px;
+width: 4vw;
+grid-area:2/2/3/3;
+align-self: center;
+
+
+}
+
+
+.principal__tipo-consulta {
+font-size:0.75rem;
+color:var(--cor-sobre-consulta);
+letter-spacing: 0.3px;
+grid-area:2/3/3/4;
+align-self: center;
+
+}
+
+
+.principal__contato-mensagem {
+	min-width: 32px;
+	min-height: 32px;
+	max-width: 50px;
+
+	width: 54%;
+	height: 54%;
+
+	background-color: var(--cor-fundo-icone-mensagem);
+	border-radius: 100%;
+	grid-area:1/4/3/5;
+	align-self: center;
+	justify-self: center;
+	cursor: pointer;
+
+	
+
+}
+
+.principal__contato-mensagem img {
+	min-width: 13.3px;	
+	max-width: 20px;
+	width:40%;
+
+}
+
+
+
+
+
+
+/*  Segunda metade do card  */
+
+
+.principal__card-metade-dois {
+
+
+display: grid;
+grid-template-columns:repeat(2, auto) ;
+grid-template-rows:auto 1fr;
+grid-column-gap: 8%;
+grid-row-gap:10px;
+
+
+}
+
+
+.principal__tempo{
+color:var(--cor-principal);
+font-size:0.75rem;
+font-weight: 500;
+letter-spacing: 0.3px;
+grid-area:1/1/2/3;
+}
+
+
+.principal__ligar-video {
+color:var(--cor-texto-botao-ligar-video);
+font-size:0.88rem;
+font-weight: 500;
+letter-spacing: 0.3px;
+background-color: var(--cor-fundo-botao-ligar-video);
+box-shadow:var(--sombra-botao-ligar-video);
+border-radius: 8px;
+padding:15px 8px;
+text-align: center;
+grid-area:2/1/3/2;
+max-width: 275px;
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+.principal__ligar-audio {
+color:var(--cor-principal);
+font-size:0.88rem;
+font-weight: 500;
+letter-spacing: 0.3px;
+background-color: var(--cor-fundo-botao-ligar-audio);
+border:1px solid var(--cor-borda-botao-ligar-audio);
+border-radius: 8px;
+padding:15px 8px;
+text-align: center;
+grid-area:2/2/3/3;
+max-width: 275px;
+width: 100%;
+justify-self: end;
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+.principal__ver-endereco {
+
+color:var(--cor-texto-botao-endereco);
+font-size:0.88rem;
+font-weight: 500;
+letter-spacing: 0.3px;
+background-color: var(--cor-botao-geral);
+box-shadow:var(--sombra-botao-endereco);
+border-radius: 8px;
+padding:15px 8px;
+text-align: center;
+grid-area:2/1/3/3;
+width:100%;
+max-width: 350px;
+justify-self: center;	
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+	.principal__hoje, .principal__amanha, .principal__quarta-feira{
+		display: flex;
+		flex-flow:row wrap;
+		justify-content: space-between;
+		
+	
+	}
+
+	.principal__card {
+		min-width: 359px;
+		max-width:600px;
+		width: 48%;
+	}
+}
+
+
+
+@media screen and (min-width:1280px) {
+
+	.principal{
+		margin-left:16%;
+
+	}
+
+
+	.principal__card {
+		min-width: 345px;
+		max-width:500px;
+		width: 33%;
+	}
+
+	.principal__contato-mensagem:hover{
+	transition: 0.75s;
+	border:1px solid black;
+	rotate: 360deg;
+}
+
+	.principal__ligar-video:hover{
+		border:2px solid black;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		transition: 0.15s;
+		font-weight: 700;
+
+	}
+
+	.principal__ligar-audio:hover{
+		border:2px solid grey;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		transition: 0.15s;
+		font-weight: 500;
+		background:radial-gradient(transparent 10%, lightgrey);
+
+	}
+
+	.principal__ver-endereco:hover {
+		border:2px solid black;
+		text-shadow: 1.5px 1.5px 1.5px black;
+		transition: 0.15s;
+		font-weight: 600;
+
+	}
+}

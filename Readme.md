@@ -1,9 +1,9 @@
-***** ATENÇÃO, LEIA ABAIXO *****
 
+>Sobre:
 
 **  Utilizado HTML5, CSS3 e JavaScript (manipulação com o DOM)
 
-**  Neste projeto foi trabalhado mais afundo a interação com a página (principalmente com pseudo-classes e elementos), uso de GRID, Flexbox e Positions 
+**  Trabalhado mais afundo a interação com a página (principalmente com pseudo-classes e elementos), uso de  ```GRID, Flexbox e Positions ``` 
 
 **  Possui exemplo de um formulário por completo na resolução para desktop
   

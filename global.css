@@ -1,0 +1,111 @@
+@import url('css/reset.css');
+@import url('css/normalize.css');
+@import url('css/conteudo_pagina_css/cabecalho.css');
+@import url('css/conteudo_pagina_css/secao_nav.css');
+@import url('css/conteudo_pagina_css/botao_flutuante.css');
+@import url('css/conteudo_pagina_css/principal.css');
+@import url('css/conteudo_pagina_css/formulario.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+
+:root {   	
+	
+font-size: 10px;
+
+--fonte-principal:'Montserrat';
+
+--cor-background:#E5E5E5;
+--cor-fundo-card:rgba(255, 255, 255, 1);
+
+--cor-icones-topo-smartphone:rgba(51, 51, 51, 1);
+
+--cor-sobre-consulta:rgba(163, 163, 163, 1); 
+
+--cor-principal:rgba(70, 70, 70, 1); 
+
+--cor-fundo-icone-mensagem:rgba(246, 246, 246, 1);
+--cor-botao-geral:rgba(72, 148, 255, 1);
+
+--cor-fundo-botao-ligar-audio:rgba(255, 255, 255, 0.9);
+--cor-borda-botao-ligar-audio:rgba(236, 236, 236, 1);
+
+--cor-texto-botao-ligar-video:rgba(255, 255, 255, 1);
+--cor-fundo-botao-ligar-video:rgba(255, 176, 80, 1);
+--sombra-botao-ligar-video:rgba(255, 176, 80, 0.16);
+
+--cor-texto-botao-endereco:rgba(255, 255, 255, 1);
+--sombra-botao-endereco:rgba(72, 148, 255, 0.16);
+
+--sombra-fundo-menu:rgba(0, 0, 0, 0.06);
+
+--sombra-botao-flutuante:rgba(255, 152, 56, 0.06);
+--cor-texto-botao-flutuante:rgba(255, 152, 56, 0.06);
+--cor-fundo-flutuante-acionado:rgba(0, 0, 0, 1);
+
+--cor-texto-input:rgba(137, 137, 137, 1);
+--cor-placeholder:rgba(207, 207, 207, 1);
+
+}
+
+
+
+* {
+
+margin:0;
+padding: 0;
+touch-action:manipulation; 
+
+	
+}
+	
+
+
+html {
+ 
+         
+min-width: 320px;
+
+}
+
+
+
+body {  
+
+
+-webkit-font-smoothing:antialiased;
+font-family: var(--fonte-principal);
+background-color:var(--cor-background);
+margin:auto 1rem;
+
+}
+
+
+.container{ 
+position: fixed;
+width:100%;
+margin:auto -1.6rem;
+height: 100vh;
+background-color:var(--cor-fundo-flutuante-acionado);
+opacity: 0.6;
+transition: 1s;
+
+
+}
+
+.bloqueio {
+	overflow-y:hidden;
+
+}
+
+
+#ns {
+	background-color: white;
+	color:red;	
+	display: block;
+	text-align: center;
+	font-size: 1.4rem;
+	margin:5rem;
+}
+

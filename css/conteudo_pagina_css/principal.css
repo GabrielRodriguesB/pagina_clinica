@@ -1,0 +1,346 @@
+.principal {
+margin-top:-3.2rem;
+padding: 0.5rem;
+
+}
+
+
+.principal__hoje {
+
+margin-bottom: 5rem;
+
+
+
+}
+
+
+.principal__amanha {
+
+margin-bottom: 5rem;
+
+}
+
+.principal__quarta-feira {
+	
+	margin-bottom: 8rem;
+}
+
+
+.principal__titulo {
+
+margin-bottom:2.5rem;
+color:var(--cor-principal);
+font-weight:700;
+font-size:1.8rem;
+
+}
+
+.principal__titulo:first-child{
+	margin-top:3.8rem;
+}
+
+
+
+
+
+/* Card completo */
+
+
+
+.principal__card {
+
+
+
+background-color:var(--cor-fundo-card);
+border-radius: 0.8rem;
+padding:1.5rem;
+margin-bottom:2rem;
+
+
+}
+
+
+
+
+/* Primeira metade do card*/
+
+
+
+.principal__card-metade-um{
+
+display: grid;
+grid-template-columns:20% 2rem auto 20%;
+grid-template-rows:repeat(2, 50%);
+grid-column-gap: 0.5rem;
+padding: 1rem;
+
+
+
+}
+
+
+.principal__foto-perfil {
+
+min-width: 4.8rem;
+max-width: 8.8rem;
+width: 80%;
+border-radius: 100%;
+object-fit: cover;
+grid-area:1/1/3/2;
+}
+
+
+.principal__nome-paciente {
+color:var(--cor-principal);
+font-weight:700;
+font-size:1.4rem;
+letter-spacing: 0.3px;
+grid-area:1/2/2/4;
+align-self: end;
+
+}
+
+
+.principal__icone-tipo-consulta {
+
+min-width: 1.4rem;
+max-width: 2.1rem;
+grid-area:2/2/3/3;
+align-self: center;
+
+
+}
+
+
+.principal__tipo-consulta {
+font-size:1.25rem;
+color:var(--cor-sobre-consulta);
+letter-spacing: 0.3px;
+grid-area:2/3/3/4;
+align-self: center;
+
+}
+
+
+.principal__contato-mensagem {
+	min-width: 3.2rem;
+	min-height: 3.2rem;
+	max-width: 5rem;
+
+	width: 54%;
+	height: 54%;
+
+	background-color: var(--cor-fundo-icone-mensagem);
+	border-radius: 100%;
+	grid-area:1/4/3/5;
+	align-self: center;
+	justify-self: center;
+	cursor: pointer;
+
+	
+
+}
+
+.principal__contato-mensagem img {
+	min-width: 1.33rem;	
+	max-width: 2rem;
+	width:40%;
+
+}
+
+
+
+
+
+
+/*  Segunda metade do card  */
+
+
+.principal__card-metade-dois {
+
+
+display: grid;
+grid-template-columns:repeat(2, auto) ;
+grid-template-rows:auto 1fr;
+grid-column-gap: 8%;
+grid-row-gap:1rem;
+padding: 1rem;
+
+}
+
+
+.principal__tempo{
+color:var(--cor-principal);
+font-size:1.2rem;
+font-weight: 500;
+grid-area:1/1/2/3;
+}
+
+
+.principal__ligar-video {
+color:var(--cor-texto-botao-ligar-video);
+font-size:1.4rem;
+font-weight: 500;
+background-color: var(--cor-fundo-botao-ligar-video);
+box-shadow:var(--sombra-botao-ligar-video);
+border-radius: 0.8rem;
+padding:1.5rem 0.8rem;
+text-align: center;
+grid-area:2/1/3/2;
+max-width: 27.5rem;
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+.principal__ligar-audio {
+color:var(--cor-principal);
+font-size:1.4rem;
+font-weight: 500;
+background-color: var(--cor-fundo-botao-ligar-audio);
+border:0.1rem solid var(--cor-borda-botao-ligar-audio);
+border-radius: 0.8rem;
+padding:1.5rem 0.8rem;
+text-align: center;
+grid-area:2/2/3/3;
+max-width: 27.5rem;
+width: 100%;
+justify-self: end;
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+.principal__ver-endereco {
+
+color:var(--cor-texto-botao-endereco);
+font-size:1.4rem;
+font-weight: 500;
+background-color: var(--cor-botao-geral);
+box-shadow:var(--sombra-botao-endereco);
+border-radius: 0.8rem;
+padding:1.5rem 0.8rem;
+text-align: center;
+grid-area:2/1/3/3;
+width:100%;
+max-width: 35rem;
+justify-self: center;	
+cursor: pointer;
+transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:479px) {
+	.principal__nome-paciente {
+
+		font-size:1.2rem;
+		
+		}
+
+		.principal__tipo-consulta {
+			font-size:1.15rem;
+
+		
+		}
+
+		.principal__ligar-video {
+			font-size:1.2rem;
+
+		}
+			
+			
+			.principal__ligar-audio {
+			font-size:1.2rem;
+
+		}
+
+		.principal__ver-endereco {
+
+			font-size:1.3rem;
+
+			}
+	
+}
+
+
+@media screen and (min-width:768px) {
+
+	.principal__hoje, .principal__amanha, .principal__quarta-feira{
+		display: flex;
+		flex-flow:row wrap;
+		justify-content: space-between;
+	
+	}
+
+	.principal__card {
+		min-width: 36rem;
+		max-width:60rem;
+		width: 48%;
+		
+	}
+	
+}
+
+
+@media screen and (min-width:1280px) {
+
+	.principal{
+		margin-left:16%;
+
+	}
+
+
+	.principal__card {
+		min-width: 34.5rem;
+		max-width:50rem;
+		width: 33%;
+	}
+
+	.principal__contato-mensagem:hover{
+	transition: 0.75s;
+	border:0.1rem solid black;
+}
+
+	.principal__ligar-video:hover{
+		border:2px solid black;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		transition: 0.15s;
+		font-weight: 700;
+
+	}
+
+	.principal__ligar-audio:hover{
+		border:0.2rem solid grey;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		transition: 0.15s;
+		font-weight: 500;
+		background:radial-gradient(transparent 10%, lightgrey);
+
+	}
+
+	.principal__ver-endereco:hover {
+		border:0.2rem solid black;
+		text-shadow: 0.15rem 0.15rem 0.15rem black;
+		transition: 0.15s;
+		font-weight: 600;
+
+	}
+}

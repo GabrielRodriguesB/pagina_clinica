@@ -1,0 +1,179 @@
+.menu{
+	width: 100%;
+	height: 6rem;
+	background-color:var(--cor-fundo-card);
+	box-shadow:var(--sombra-fundo-menu);
+	border-radius: 1.2rem 1.2rem 0px 0px;
+	margin:0 -16px;
+	position: fixed;
+	bottom:0%;
+
+}
+
+
+.secao__navegacao {
+height: inherit;
+font-size:1.6rem;
+color:var(--cor-principal);
+padding: 0.5rem;
+
+}
+
+
+.secao__lista-navegacao {
+height: inherit;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+
+}
+
+.secao__lista-item{
+	display: flex;
+	flex-flow:column wrap;
+	row-gap:0.6rem;
+	transition: 0.3s;
+}
+
+
+.secao__lista-item:first-child {
+
+color:var(--cor-botao-geral);
+
+}
+
+
+.secao__lista-texto {
+cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:479px) {
+
+	.secao__lista-texto {
+		font-size: 1.4rem;
+				
+		}
+}
+
+
+@media screen and (min-width:768px) {
+
+	.secao__lista-navegacao {
+		justify-content: center;
+		column-gap:3.5rem;
+	}
+}
+
+
+
+@media screen and (min-width:1280px) {
+
+
+
+	.menu {
+		min-width: 20rem;
+		max-width: 30rem;
+		width: 16%;
+		height: 100vh;
+		border-right:4px solid rgba(0,0,0, 0.2); 
+		top:0%;
+		border-radius: 0px;
+		
+
+
+	}
+
+
+	.secao__navegacao {
+		margin-top:3rem;
+		
+		
+	}
+
+	.secao__lista-navegacao {
+	
+	margin:0.2rem;
+	height: 22.5rem;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: space-around;
+
+	}
+
+	.secao__lista-item {
+	
+	flex-direction: row;
+	margin-left:1.5rem;
+	column-gap:2rem;
+	align-items: center;
+	cursor: pointer;
+
+	}
+
+	.secao__lista-item:hover{
+		text-decoration: underline;
+		font-weight: 500;
+		font-size: 1.8rem;
+		transition: 0.3s;
+		transform: scale(1.07);
+
+	
+		
+	}
+
+
+	.secao__lista-item:nth-child(1) .secao__lista-texto{
+		margin-left:0.5px;
+
+	}
+
+	.secao__lista-item:nth-child(3) .secao__lista-texto{
+		margin-left:0.5rem;
+
+	}
+
+	.secao__lista-item:nth-child(4) .secao__lista-texto{
+		margin-left:0.3rem;
+
+	}
+
+	.secao__lista-item:nth-child(1) .secao__lista-img{
+		margin-left:0.25rem;
+
+	}
+
+	.secao__lista-item:nth-child(3) .secao__lista-img{
+		margin-left:0.5rem;
+
+	}
+
+	.secao__lista-item:nth-child(4) .secao__lista-img{
+		margin-left:0.3rem;
+
+	}
+	
+	
+}
+

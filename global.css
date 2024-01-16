@@ -1,11 +1,13 @@
-@import url('css/reset.css');
-@import url('css/normalize.css');
-@import url('css/conteudo_pagina_css/cabecalho.css');
-@import url('css/conteudo_pagina_css/secao_nav.css');
-@import url('css/conteudo_pagina_css/botao_flutuante.css');
-@import url('css/conteudo_pagina_css/principal.css');
-@import url('css/conteudo_pagina_css/formulario.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@charset "UTF-8";
+
+@import url("css/reset.css");
+@import url("css/normalize.css");
+@import url("css/conteudo_pagina_css/cabecalho.css");
+@import url("css/conteudo_pagina_css/secao_nav.css");
+@import url("css/conteudo_pagina_css/botao_flutuante.css");
+@import url("css/conteudo_pagina_css/principal.css");
+@import url("css/conteudo_pagina_css/formulario.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 
 
@@ -14,7 +16,7 @@
 	
 font-size: 10px;
 
---fonte-principal:'Montserrat';
+--fonte-principal:"Montserrat";
 
 --cor-background:#E5E5E5;
 --cor-fundo-card:rgba(255, 255, 255, 1);
